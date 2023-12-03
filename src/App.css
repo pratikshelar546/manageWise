@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth;
+ }
+body{
+    margin: 0;
+    width: 100% !important;
+    padding: 0;
+    font-family:  "Outfit", sans-serif ;
+    background: linear-gradient(to top, #fdf3ee 0%, #ffffff 30%, #ffffff 80%, #fdf3ee 100%);
+     /* background-color: white; */
+    color: black;
+}
