@@ -1,20 +1,10 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { useEffect } from "react";
+
 import { FaBarsStaggered } from "react-icons/fa6";
 
 const Navbar = () => {
-  const controls = useAnimation();
 
-  const animateDrop = async () => {
-    await controls.start("visible");
-  };
-
-  useEffect(() => {
-    if (clicked) {
-      animateDrop();
-    }
-  }, []);
   const [clicked, setClicked] = useState(false);
   const showNav = () => {
     setClicked(!clicked);
